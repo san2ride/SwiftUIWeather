@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F77D75C52B8FC18B004B734A /* CurrentWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75C42B8FC18B004B734A /* CurrentWeatherApp.swift */; };
-		F77D75C72B8FC18B004B734A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75C62B8FC18B004B734A /* ContentView.swift */; };
 		F77D75C92B8FC18D004B734A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77D75C82B8FC18D004B734A /* Assets.xcassets */; };
 		F77D75CC2B8FC18D004B734A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77D75CB2B8FC18D004B734A /* Preview Assets.xcassets */; };
 		F77D75D42B8FC229004B734A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75D32B8FC229004B734A /* Location.swift */; };
@@ -16,12 +15,12 @@
 		F77D75D92B8FC73E004B734A /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75D82B8FC73E004B734A /* APIEndpoint.swift */; };
 		F77D75DC2B8FC8CB004B734A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DB2B8FC8CB004B734A /* Constants.swift */; };
 		F77D75DE2B8FD8EA004B734A /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */; };
+		F77D75E02B8FDAF4004B734A /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DF2B8FDAF4004B734A /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F77D75C12B8FC18B004B734A /* CurrentWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrentWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77D75C42B8FC18B004B734A /* CurrentWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherApp.swift; sourceTree = "<group>"; };
-		F77D75C62B8FC18B004B734A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F77D75C82B8FC18D004B734A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F77D75CB2B8FC18D004B734A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F77D75D32B8FC229004B734A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -29,6 +28,7 @@
 		F77D75D82B8FC73E004B734A /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		F77D75DB2B8FC8CB004B734A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
+		F77D75DF2B8FDAF4004B734A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				F77D75DA2B8FC8B4004B734A /* Utilities */,
 				F77D75D72B8FC725004B734A /* Clients */,
 				F77D75D22B8FC1F2004B734A /* Models */,
+				F77D75DF2B8FDAF4004B734A /* WeatherView.swift */,
 				F77D75C42B8FC18B004B734A /* CurrentWeatherApp.swift */,
-				F77D75C62B8FC18B004B734A /* ContentView.swift */,
 				F77D75C82B8FC18D004B734A /* Assets.xcassets */,
 				F77D75CA2B8FC18D004B734A /* Preview Content */,
 			);
@@ -177,11 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77D75D62B8FC2E5004B734A /* Weather.swift in Sources */,
-				F77D75C72B8FC18B004B734A /* ContentView.swift in Sources */,
 				F77D75DE2B8FD8EA004B734A /* GeocodingClient.swift in Sources */,
 				F77D75D42B8FC229004B734A /* Location.swift in Sources */,
 				F77D75C52B8FC18B004B734A /* CurrentWeatherApp.swift in Sources */,
 				F77D75D92B8FC73E004B734A /* APIEndpoint.swift in Sources */,
+				F77D75E02B8FDAF4004B734A /* WeatherView.swift in Sources */,
 				F77D75DC2B8FC8CB004B734A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
