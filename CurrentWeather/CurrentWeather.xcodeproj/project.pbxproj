@@ -14,6 +14,8 @@
 		F77D75D42B8FC229004B734A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75D32B8FC229004B734A /* Location.swift */; };
 		F77D75D62B8FC2E5004B734A /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75D52B8FC2E5004B734A /* Weather.swift */; };
 		F77D75D92B8FC73E004B734A /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75D82B8FC73E004B734A /* APIEndpoint.swift */; };
+		F77D75DC2B8FC8CB004B734A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DB2B8FC8CB004B734A /* Constants.swift */; };
+		F77D75DE2B8FD8EA004B734A /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		F77D75D32B8FC229004B734A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F77D75D52B8FC2E5004B734A /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		F77D75D82B8FC73E004B734A /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		F77D75DB2B8FC8CB004B734A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		F77D75C32B8FC18B004B734A /* CurrentWeather */ = {
 			isa = PBXGroup;
 			children = (
+				F77D75DA2B8FC8B4004B734A /* Utilities */,
 				F77D75D72B8FC725004B734A /* Clients */,
 				F77D75D22B8FC1F2004B734A /* Models */,
 				F77D75C42B8FC18B004B734A /* CurrentWeatherApp.swift */,
@@ -88,8 +93,17 @@
 			isa = PBXGroup;
 			children = (
 				F77D75D82B8FC73E004B734A /* APIEndpoint.swift */,
+				F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		F77D75DA2B8FC8B4004B734A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F77D75DB2B8FC8CB004B734A /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +178,11 @@
 			files = (
 				F77D75D62B8FC2E5004B734A /* Weather.swift in Sources */,
 				F77D75C72B8FC18B004B734A /* ContentView.swift in Sources */,
+				F77D75DE2B8FD8EA004B734A /* GeocodingClient.swift in Sources */,
 				F77D75D42B8FC229004B734A /* Location.swift in Sources */,
 				F77D75C52B8FC18B004B734A /* CurrentWeatherApp.swift in Sources */,
 				F77D75D92B8FC73E004B734A /* APIEndpoint.swift in Sources */,
+				F77D75DC2B8FC8CB004B734A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
