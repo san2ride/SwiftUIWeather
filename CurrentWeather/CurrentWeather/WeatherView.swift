@@ -9,17 +9,47 @@ import SwiftUI
 
 struct WeatherView: View {
     
+    @State private var city: String = ""
+    @State private var isFetchingWeather: Bool = false
+    
+    let geocodingClient = GeocodingClient()
+    let weatherClient = WeatherClient()
+    
+    @State private var weather: Weather?
+    
+    func fetchWeather() async {
+        do {
+            guard let location = try await geocodingClient.coordinateByCity(city) else { return }
+            weather = try await weatherClient.fetchWeather(location: location)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
     var body: some View {
         VStack {
-            Button("Get Coordinates") {
-                Task {
-                    let geocodingClient = GeocodingClient()
-                    let weatherClient = WeatherClient()
-                    let location = try! await geocodingClient.coordinateByCity("Denver")
-                    let weather = try! await weatherClient.fetchWeather(location: location!)
-                    print(weather)
+            TextField("City", text: $city)
+                .textFieldStyle(.roundedBorder)
+                .onSubmit {
+                    isFetchingWeather = true
+                }.task(id: isFetchingWeather) {
+                    if isFetchingWeather {
+                        await fetchWeather()
+                        isFetchingWeather = false
+                        city = ""
+                    }
                 }
+            if let weather {
+                Text("\(weather.temp)")
+                    .font(.headline)
+                    .padding()
+                Text("\(weather.feelsLike)")
+                    .font(.subheadline)
+                    .padding()
+                Text("\(weather.humidity)")
+                    .font(.subheadline)
             }
+            Spacer()
         }
         .padding()
     }
