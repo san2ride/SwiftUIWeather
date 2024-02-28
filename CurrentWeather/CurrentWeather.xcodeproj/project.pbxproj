@@ -16,6 +16,7 @@
 		F77D75DC2B8FC8CB004B734A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DB2B8FC8CB004B734A /* Constants.swift */; };
 		F77D75DE2B8FD8EA004B734A /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */; };
 		F77D75E02B8FDAF4004B734A /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75DF2B8FDAF4004B734A /* WeatherView.swift */; };
+		F77D75E22B8FDC4D004B734A /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D75E12B8FDC4D004B734A /* WeatherClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F77D75DB2B8FC8CB004B734A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 		F77D75DF2B8FDAF4004B734A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		F77D75E12B8FDC4D004B734A /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				F77D75D82B8FC73E004B734A /* APIEndpoint.swift */,
 				F77D75DD2B8FD8EA004B734A /* GeocodingClient.swift */,
+				F77D75E12B8FDC4D004B734A /* WeatherClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				F77D75D42B8FC229004B734A /* Location.swift in Sources */,
 				F77D75C52B8FC18B004B734A /* CurrentWeatherApp.swift in Sources */,
 				F77D75D92B8FC73E004B734A /* APIEndpoint.swift in Sources */,
+				F77D75E22B8FDC4D004B734A /* WeatherClient.swift in Sources */,
 				F77D75E02B8FDAF4004B734A /* WeatherView.swift in Sources */,
 				F77D75DC2B8FC8CB004B734A /* Constants.swift in Sources */,
 			);
@@ -329,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = trvl.CurrentWeather;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = trvl.CurrentWeather;
+				PRODUCT_BUNDLE_IDENTIFIER = trvl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
