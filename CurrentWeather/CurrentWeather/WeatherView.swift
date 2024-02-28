@@ -40,14 +40,12 @@ struct WeatherView: View {
                     }
                 }
             if let weather {
-                Text("\(weather.temp)")
+                Text(MeasurementFormatter.temperature(value: weather.temp))
                     .font(.headline)
                     .padding()
-                Text("\(weather.feelsLike)")
+                Text(MeasurementFormatter.temperature(value: weather.feelsLike))
                     .font(.subheadline)
                     .padding()
-                Text("\(weather.humidity)")
-                    .font(.subheadline)
             }
             Spacer()
         }
